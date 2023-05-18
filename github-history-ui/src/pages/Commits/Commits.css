@@ -1,0 +1,125 @@
+header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #d7d7d7;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+header h1 {
+    font-size: 24px;
+    display: inline;
+    vertical-align: middle;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+header .buttons {
+    align-self: flex-end;
+    flex: 1;
+    text-align: right;
+}
+header .buttons button {
+    display: inline-block;
+    border: 1px solid steelblue;
+    border-radius: 3px;
+    padding: 10px 15px;
+    color: steelblue;
+}
+header .buttons button:hover {
+    background: steelblue;
+    color: white;
+}
+.empty-state {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empty-state h1 {
+    color: steelblue;
+}
+.empty-state p {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    padding: 10px;
+    border-radius: 35px;
+    color: #646464;
+    text-align: center;
+    background: lightgray;
+}
+.empty-state p:before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -12px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid lightgray;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+.list-container {
+    padding-left: 20px;
+}
+.list-container h1, .list-container h2, .list-container h3, .list-container h4, .list-container h5 {
+    margin: 0;
+}
+.list-container li {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-bottom: 2px dotted #d7d7d7;
+    box-sizing: border-box;
+}
+.list-container li:last-child {
+    margin-bottom: none;
+}
+.list {
+    margin: 10px auto 0 auto;
+    padding: 0;
+}
+.list-badge {
+    align-self: flex-start;
+    display: block;
+    width: 15px;
+    height: 18px;
+    margin-right: 20px;
+    border: 1px dotted steelblue;
+    color: steelblue;
+    text-align: center;
+    padding: 15px 8px;
+}
+.list-article-summary {
+    flex: 2;
+}
+.list-title {
+    color: #596673;
+    font-weight: 300;
+}
+.list-author {
+    color: #c1c1c1;
+}
+.list-post-date {
+    color: #c1c1c1;
+    align-self: center;
+}
+.list-close {
+    margin-left: 20px;
+    align-self: center;
+    color: #c1c1c1;
+}
+.list-close:hover {
+    color: crimson;
+    cursor: pointer;
+}
